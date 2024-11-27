@@ -37,7 +37,7 @@ class UserTableSeeder extends Seeder
         $user =   User::create([
                 'name' => 'Administrador do sistema',
                 'email' => 'adminstrador@email.com',               
-                'password' => bcrypt('password'),
+                'password' => bcrypt('teste123'),
                 'remember_token' => Str::random(10),
                 'created_at'    => date('Y-m-d H:i:s'),
                 'updated_at'    => date('Y-m-d H:i:s'),

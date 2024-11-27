@@ -103,7 +103,7 @@ class UserController extends Controller
 
 
         } catch (\Throwable $th) {
-            $message    =   env('APP_DEBUG') ? $th->getMessage() : 'Erro ao processar sau requisicao!';           
+            $message    =   env('APP_DEBUG') ? $th->getMessage() : 'Erro ao processar sua requisicao!';           
             flash($message)->warning()->important();
             return redirect()->back();
         }
