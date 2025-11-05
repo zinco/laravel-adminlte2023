@@ -21,8 +21,10 @@ class AccessControlMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         $routeName        =   $request->route()->getname();
+
+      
         $ignoreResource    =   config('accesscontrollist')['ignore.resource'];
-       
+        
         if(!in_array($routeName,$ignoreResource)){
          
             $this->authorize($routeName);

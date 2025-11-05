@@ -7,7 +7,10 @@ use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\TabelaController;
 use Illuminate\Support\Facades\Auth;
-
+//2024
+use App\Http\Controllers\IpController;
+use App\Http\Controllers\LocalController;
+use App\Http\Controllers\ClasseController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -50,5 +53,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::resource('permissoes', ResourceController::class);
     Route::resource('users', UserController::class);
     Route::resource('tabelas', TabelaController::class);
+
+
+    //lista de ips, 2024
+    //ip´s
+    Route::resource('Ips', IpController::class);
+    Route::resource('Local', LocalController::class);
+    Route::resource('Classe', ClasseController::class);
     
 });

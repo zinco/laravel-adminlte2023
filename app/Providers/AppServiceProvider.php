@@ -83,9 +83,54 @@ class AppServiceProvider extends ServiceProvider
                 ]
                 
             ]);
+
+        //2024 - CADASTRO DE IPS
+            $event->menu->add([
+                'header' => 'INFORMÁTICA ',
+                
+
+                
+                ]);
+
+                $event->menu->add([
+                    'text'      =>      'Cadastro de Ip´s',
+                    'url'     =>      '/dashboard',
+                    'icon'          => ' fa fa-heart',
+
+
+                    'submenu'   =>  [
+                        [
+                            'text'      =>      'Lista de ip´s',
+                            'route' => 'Ips.index',
+                           // 'can'     =>      'Ips.index',
+                            'icon'          => ' fa fa-user',
+                           // 'active'        => ['users/create','users/*/edit' ],
+                            
+                        ],
+                        [
+                            'text'      =>      'Locais',
+                            'route' => 'Local.create',
+                            //'can'     =>      'listIps.temp',
+                            'icon'          => ' fa fa-user',
+                           // 'active'        => ['users/create','users/*/edit' ],
+
+                        ],
+                        [
+                            'text'      =>      'Classes',
+                            'route' => 'Classe.create',
+                           // 'can'     =>      'listIps.temp',
+                            'icon'          => ' fa fa-user',
+                           // 'active'        => ['users/create','users/*/edit' ],
+
+                        ],
+                    ]
+                ]);
+
+                
            
 
         });
+        
         
     }
 }

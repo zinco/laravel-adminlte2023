@@ -30,13 +30,7 @@ class ResourceTableSeeder extends Seeder
                 'updated_at'    => date('Y-m-d H:i:s'),
                 'tabela_id'     => 2
             ],
-            [
-                'name'      =>'Gravar uma nova função no banco de dados.',
-                'resource'      =>'roles.store',
-                 'created_at'    => date('Y-m-d H:i:s'),
-                'updated_at'    => date('Y-m-d H:i:s'),
-                'tabela_id'     => 2
-            ],
+           
             [
                 'name'      =>'Visualizar uma função.',
                 'resource'      =>'roles.show',
@@ -51,13 +45,7 @@ class ResourceTableSeeder extends Seeder
                 'updated_at'    => date('Y-m-d H:i:s'),
                 'tabela_id'     => 2
             ],
-            [
-                'name'      =>'Atualizar uma função no banco de dados.',
-                'resource'      =>'roles.update',
-                 'created_at'    => date('Y-m-d H:i:s'),
-                'updated_at'    => date('Y-m-d H:i:s'),
-                'tabela_id'     => 2
-            ],
+           
             [
                 'name'      =>'Excluir um função',
                 'resource'      =>'roles.destroy',
@@ -81,13 +69,7 @@ class ResourceTableSeeder extends Seeder
                 'updated_at'    => date('Y-m-d H:i:s'),
                 'tabela_id'     => 1
             ],
-            [
-                'name'      =>'Gravar um novo Usuário no banco de dados.',
-                'resource'      =>'users.store',
-                 'created_at'    => date('Y-m-d H:i:s'),
-                'updated_at'    => date('Y-m-d H:i:s'),
-                'tabela_id'     => 1
-            ],
+           
             [
                 'name'      =>'Visualizar um Usuário.',
                 'resource'      =>'users.show',
@@ -102,13 +84,7 @@ class ResourceTableSeeder extends Seeder
                 'updated_at'    => date('Y-m-d H:i:s'),
                 'tabela_id'     => 1
             ],
-            [
-                'name'      =>'Atualizar um Usuário no banco de dados.',
-                'resource'      =>'users.update',
-                 'created_at'    => date('Y-m-d H:i:s'),
-                'updated_at'    => date('Y-m-d H:i:s'),
-                'tabela_id'     => 1
-            ],
+           
             [
                 'name'      =>'Excluir um Usuário',
                 'resource'      =>'users.destroy',
@@ -131,13 +107,7 @@ class ResourceTableSeeder extends Seeder
                 'updated_at'    => date('Y-m-d H:i:s'),
                 'tabela_id'     => 3
             ],
-            [
-                'name'      =>'Gravar uma nova função no banco de dados.',
-                'resource'      =>'permissoes.store',
-                 'created_at'    => date('Y-m-d H:i:s'),
-                'updated_at'    => date('Y-m-d H:i:s'),
-                'tabela_id'     => 3
-            ],
+            
             [
                 'name'      =>'Visualizar uma função.',
                 'resource'      =>'permissoes.show',
@@ -152,13 +122,7 @@ class ResourceTableSeeder extends Seeder
                 'updated_at'    => date('Y-m-d H:i:s'),
                 'tabela_id'     => 3
             ],
-            [
-                'name'      =>'Atualizar uma função no banco de dados.',
-                'resource'      =>'permissoes.update',
-                 'created_at'    => date('Y-m-d H:i:s'),
-                'updated_at'    => date('Y-m-d H:i:s'),
-                'tabela_id'     => 3
-            ],
+                       
             [
                 'name'      =>'Excluir uma função',
                 'resource'      =>'permissoes.destroy',
@@ -182,13 +146,7 @@ class ResourceTableSeeder extends Seeder
                 'updated_at'    => date('Y-m-d H:i:s'),
                 'tabela_id'     => 4
             ],
-            [
-                'name'      =>'Gravar uma nova tabela no banco de dados.',
-                'resource'      =>'tabelas.store',
-                 'created_at'    => date('Y-m-d H:i:s'),
-                'updated_at'    => date('Y-m-d H:i:s'),
-                'tabela_id'     => 4
-            ],
+            
             [
                 'name'      =>'Visualizar uma tabela.',
                 'resource'      =>'tabelas.show',
@@ -203,13 +161,7 @@ class ResourceTableSeeder extends Seeder
                 'updated_at'    => date('Y-m-d H:i:s'),
                 'tabela_id'     => 4
             ],
-            [
-                'name'      =>'Atualizar uma tabela no banco de dados.',
-                'resource'      =>'tabelas.update',
-                 'created_at'    => date('Y-m-d H:i:s'),
-                'updated_at'    => date('Y-m-d H:i:s'),
-                'tabela_id'     => 4
-            ],
+           
             [
                 'name'      =>'Excluir uma tabela',
                 'resource'      =>'tabelas.destroy',
