@@ -15,7 +15,10 @@ class DatabaseSeeder extends Seeder
         $this->call(TabelaTableSeeder::class);        
         $this->call(ResourceTableSeeder::class);
         $this->call(RoleTableSeeder::class);
+        $this->call(LocalTableSeeder::class);
+        $this->call(TipoTableSeeder::class);
         $this->call(UserTableSeeder::class);
+        
         
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',

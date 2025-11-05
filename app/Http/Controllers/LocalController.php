@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Local;
 use Illuminate\Http\Request;
 
 class LocalController extends Controller
@@ -15,7 +16,7 @@ class LocalController extends Controller
      * Show the form for creating a new resource.
      */
     public function create()
-    {
+    {  
         return view('ips.local.create');
     }
 
@@ -24,7 +25,26 @@ class LocalController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       
+      
+       
+        try {
+           
+            $dados          =   $request->all();
+           
+            $local           =   Local::create($dados);
+           
+            flash('Função cadastrada com uscesso')->success();
+            return redirect()->back();
+
+        } catch (\Throwable $th) {
+            
+            
+            $message    =   env('APP_DEBUG') ? $th->getMessage() : 'Erro ao processar sau requisicao!';
+            dd( $message);
+            flash($message)->success();
+          
+        }
     }
 
     /**

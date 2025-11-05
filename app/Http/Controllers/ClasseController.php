@@ -11,7 +11,7 @@ class ClasseController extends Controller
      */
     public function index()
     {
-        //
+        return view('ips.classe.create');
     }
 
     /**
@@ -19,7 +19,7 @@ class ClasseController extends Controller
      */
     public function create()
     {
-        //
+        return view('ips.classe.create');
     }
 
     /**

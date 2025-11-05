@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('ip');
-            $table->string('mac');
-            $table->text('description');
+            $table->string('mac')->nullable();
+            $table->text('description')->nullable();
 
             $table->unsignedBigInteger('user_id'); 
             $table->foreign('user_id')->references('id')->on('users'); 
@@ -25,10 +25,11 @@ return new class extends Migration
             $table->unsignedBigInteger('local_id'); 
             $table->foreign('local_id')->references('id')->on('locals'); 
            
-
-            $table->foreign('role_id')->references('id')->on('roles'); 
-           
-
+          /*  $table->unsignedBigInteger('class_id');
+            $table->foreign('class_id')->references('id')->on('classes'); 
+           */
+          $table->unsignedBigInteger('tipo_id'); 
+          $table->foreign('tipo_id')->references('id')->on('users'); 
             $table->timestamps();
         });
     }

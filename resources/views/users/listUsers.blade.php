@@ -1,13 +1,22 @@
 @extends('adminlte::page')
 
-@section('title', 'Roles')
-
+@section('title', 'AdminLTE')
 
 @section('content_header')
-<h1 class="m-0 text-dark">TABELAS</h1>
+<h1 class="m-0 text-dark">Dashboard</h1>
 @stop
 
 @section('content')
+
+
+
+
+
+
+
+
+
+
 <div class="card">
     <div class="card-header">
         <h3 class="card-title">Lista de funções</h3>
@@ -93,13 +102,6 @@
 
         </table>
     </div>
-   
-       
-   
-
-    @if(!isset($paginate))
-        {{$users->links() }}
-    @endif
+    
 </div>
-
 @stop

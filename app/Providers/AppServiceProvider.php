@@ -100,9 +100,9 @@ class AppServiceProvider extends ServiceProvider
 
                     'submenu'   =>  [
                         [
-                            'text'      =>      'Lista de ip´s',
-                            'route' => 'Ips.index',
-                           // 'can'     =>      'Ips.index',
+                            'text'      =>      'Ip´s',
+                            'route' => 'Ip.index',
+                           // 'can'     =>      'Ip.index',
                             'icon'          => ' fa fa-user',
                            // 'active'        => ['users/create','users/*/edit' ],
                             
@@ -115,14 +115,7 @@ class AppServiceProvider extends ServiceProvider
                            // 'active'        => ['users/create','users/*/edit' ],
 
                         ],
-                        [
-                            'text'      =>      'Classes',
-                            'route' => 'Classe.create',
-                           // 'can'     =>      'listIps.temp',
-                            'icon'          => ' fa fa-user',
-                           // 'active'        => ['users/create','users/*/edit' ],
-
-                        ],
+                       
                     ]
                 ]);
 

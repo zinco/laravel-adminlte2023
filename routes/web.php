@@ -52,13 +52,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::resource('roles', RoleController::class);
     Route::resource('permissoes', ResourceController::class);
     Route::resource('users', UserController::class);
+    Route::get('/findUser', [UserController::class, 'findUser'])->name('users.findUser');
+
     Route::resource('tabelas', TabelaController::class);
 
 
     //lista de ips, 2024
     //ip´s
-    Route::resource('Ips', IpController::class);
+    Route::resource('Ip', IpController::class);
     Route::resource('Local', LocalController::class);
-    Route::resource('Classe', ClasseController::class);
+    
     
 });

@@ -169,6 +169,99 @@ class ResourceTableSeeder extends Seeder
                 'updated_at'    => date('Y-m-d H:i:s'),
                 'tabela_id'     => 4
             ],
+            
+
+
+            //lOCAL
+            [
+                'name'          => 'Listar os locais do banco de dados.',
+                'resource'      =>'Local.index',
+                 'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => date('Y-m-d H:i:s'),
+                'tabela_id'     => 5
+            ],
+            [
+                'name'      =>'Formulário Criar um novo Local.',
+                'resource'      =>'Local.create',
+                 'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => date('Y-m-d H:i:s'),
+                'tabela_id'     => 5
+            ],
+            
+            [
+                'name'      =>'Visualizar um Local.',
+                'resource'      =>'Local.show',
+                 'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => date('Y-m-d H:i:s'),
+                'tabela_id'     => 5
+            ],
+            [
+                'name'      =>'Visualizar um Local.',
+                'resource'      =>'Local.store',
+                 'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => date('Y-m-d H:i:s'),
+                'tabela_id'     => 5
+            ],
+            [
+                'name'      =>'Formulário edição de um Local',
+                'resource'      =>'Local.edit',
+                 'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => date('Y-m-d H:i:s'),
+                'tabela_id'     => 5
+            ],
+           
+            [
+                'name'      =>'Excluir um Local',
+                'resource'      =>'Local.destroy',
+                 'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => date('Y-m-d H:i:s'),
+                'tabela_id'     => 5
+            ],
+            
+            //IP
+             [
+                'name'          => 'Listar os ips do banco de dados.',
+                'resource'      =>'Ip.index',
+                 'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => date('Y-m-d H:i:s'),
+                'tabela_id'     => 7
+            ],
+            [
+                'name'      =>'Formulário Criar um novo Ip.',
+                'resource'      =>'Ip.create',
+                 'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => date('Y-m-d H:i:s'),
+                'tabela_id'     => 7
+            ],
+            [
+                'name'      =>'Formulário Criar um novo Ip.',
+                'resource'      =>'Ip.store',
+                 'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => date('Y-m-d H:i:s'),
+                'tabela_id'     => 7
+            ],
+            [
+                'name'      =>'Visualizar um Ip.',
+                'resource'      =>'Ip.show',
+                 'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => date('Y-m-d H:i:s'),
+                'tabela_id'     => 7
+            ],
+            [
+                'name'      =>'Formulário edição de um Ip',
+                'resource'      =>'Ip.edit',
+                 'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => date('Y-m-d H:i:s'),
+                'tabela_id'     => 7
+            ],
+           
+            [
+                'name'      =>'Excluir um Ip',
+                'resource'      =>'Ip.destroy',
+                 'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => date('Y-m-d H:i:s'),
+                'tabela_id'     => 7
+            ],
         ]);
     }
 }

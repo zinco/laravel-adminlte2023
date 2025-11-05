@@ -7,7 +7,9 @@ return [
             'Classe.create',
             'Classe.index',
             'Local.create',
-            'Local.index'
+            'Local.index',
+            'Local.store',
+            'users.findUser'
            
         ]
     ];

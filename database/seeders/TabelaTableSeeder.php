@@ -36,6 +36,21 @@ class TabelaTableSeeder extends Seeder
                     'description'      =>   'Tabela para registrar todas as tabelas do sistema..',
                     'table'           =>    'tabelas'
                 ],
+                [
+                    'name'      =>   'LOCALS',
+                    'description'      =>   'Tabela para registrar todos os locais de um ip',
+                    'table'           =>    'locals'
+                ],
+                [
+                    'name'      =>   'CLASSES',
+                    'description'      =>   'Tabela para registrar todas as classes de um ip.',
+                    'table'           =>    'tabelas'
+                ],
+                [
+                    'name'      =>   'IPS',
+                    'description'      =>   'Tabela para registrar todos os ips dos dispositivos da rede',
+                    'table'           =>    'ips'
+                ],
                 //usuario
                 
             ]

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\UserRequest as UserRequest;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
 use App\Models\User;
 use App\Models\Role;
 class UserController extends Controller
@@ -22,6 +22,36 @@ class UserController extends Controller
         
        
         return view('users.index',compact('users'));
+    }
+
+    public function findUser(Request $request){
+        $dados  = $request->all();
+
+        $busca =  strpos($dados['table_search'],'@');
+
+        $dados = $dados['table_search'];
+       
+       if($busca){
+        $users = DB::table('users')
+                
+        ->where('email', 'like', $dados.'%')
+        
+        ->get();
+        
+        
+        
+       }else{
+      
+        $users = DB::table('users')
+                
+                ->where('name', 'like', $dados.'%')
+                
+                ->get();
+        
+       }
+       $paginate = true;
+      
+       return view('users.index',compact('users','paginate'));
     }
 
     /**

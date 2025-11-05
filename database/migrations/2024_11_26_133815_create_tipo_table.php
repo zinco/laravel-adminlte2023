@@ -11,18 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('locals', function (Blueprint $table) {
+        Schema::create('tipo', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('fone')->nullable();
-            $table->string('bairro')->nullable();
-            $table->string('rua')->nullable();
-            $table->string('numero')->nullable();
-            $table->string('cidade')->nullable();
-            $table->string('estado')->nullable();
-            $table->string('cep')->nullable();
             $table->text('description')->nullable();
-            $table->boolean('ativo')->default(true);
             $table->timestamps();
         });
     }
@@ -32,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('locals');
+        Schema::dropIfExists('tipo');
     }
 };
